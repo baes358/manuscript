@@ -1,13 +1,38 @@
-:root { 
-    font-family: 'Archivo', sans-serif; 
+body { 
+    background-color: #FFF1F4;
+    font-family: 'Geist', sans-serif; 
 }
 
-.header-title {
-    color: tomato
+h1{
+    font-family: 'Geist', sans-serif; 
+    font-weight: 700;
+    color: #FF808F;
+}
+
+h2{
+    font-family: 'Geist Mono', monospace;
+    font-weight: 500;
+    color: #6C1B27;
+}
+
+p{
+    font-family: 'Geist Mono', monospace;
+    font-weight: 400;
+    color: black;
+}
+
+footer{
+    font-family: 'Geist', sans-serif; 
+    font-weight: 500;
+}
+
+
+.title {
+ 
 }
 
 .author {
-    color:blueviolet
+
 }
 
 .article {
@@ -15,5 +40,5 @@
 }
 
 .response {
-    
+
 }
