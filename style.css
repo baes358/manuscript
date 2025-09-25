@@ -1,3 +1,4 @@
+/* fonts */
 @font-face {
   font-family: "Philibert";
   src: url("/fonts/PhiliItaRus.woff");
@@ -32,6 +33,71 @@
 }
 
 
+
+
+
+
+
+
+
+
+
+/* class + id */
+/* header */
+.site-header{
+    background-color: #FFC1F2;
+    padding-bottom:30px;
+}
+.site-title{
+    padding-top: 50px;
+    font-size:3rem;
+    line-height:1;
+}
+.author{
+    padding:10px 0;
+}
+
+/* reading */
+.reading{
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+.pull-quote{
+    margin-bottom:20px;
+    margin-top:15px;
+    padding-bottom:20px;
+    padding-top:10px;
+    background-color: #fbddf4;
+}
+
+/* response */
+.response-header{
+    background-color: #2E2D2D;
+    padding-bottom:30px;
+}
+#response-title{
+    color: #FFC1F2;
+    padding-top: 50px;
+    font-size:3rem;
+    line-height:1;
+}
+#myname{
+    color:#FFF1F4;
+    padding:10px 0;
+}
+.myresponse{
+    background-color: #3D3C3C;
+    
+}
+.myresponse p{
+    color: #F3EFF0;
+    padding-top:20px;
+}
+#myresponse-top{
+    margin-top:15px;
+}
+
+/* html semantics */
 body { 
     background-color: #FFF1F4;
     font-family: 'Panchi Mono', monospace; 
@@ -40,41 +106,57 @@ body {
 h1{
     font-family: 'Philibert', serif; 
     font-weight: 700;
-    font-size: 2.5rem;
+    font-size: 2rem;
+    color: #2E2D2D;
+    text-align: center;
 }
 
 h2{
     font-family: 'Philibert';
     font-weight: 700;
     font-size: 2rem;
+    color: #2E2D2D;
+    text-align: center;
+}
+
+h3{
+    font-family: 'Fluxisch';
+    font-size: 1.3rem;
+    color: #2E2D2D;
+    text-align: center;
 }
 
 p{
     font-family: 'Panchi Mono', monospace;
-    font-weight: 350;
+    font-weight: 800;
+    color: black;
+    font-size: 1rem;
+    padding:10px 50px ;
+    line-height: 1.5;
+}
+blockquote p{
+    font-size: 1.2rem;
+    line-height: 1.5;
+    font-weight:900pt;
+    padding:10px 50px ;
+}
+cite{
+    font-family: 'Panchi Mono', monospace;
+    font-weight: 800;
+    font-style:italic;
     color: black;
     font-size: 0.9rem;
+    padding:10px 50px;
 }
 
 footer{
-    font-family: 'Panchi Mono', monospace; 
+    font-family: 'Fluxisch', sans-serif; 
     font-weight: 500;
+    font-size:.75rem;
+    padding: 20px;
+    background-color: #3D3C3C;
+    color:#b8b8b8;
+    text-align: center;
 }
 
 
-
-.title {
- 
-}
-
-.author {
-
-}
-
-.article {
-
-}
-
-.response {
-
-}
