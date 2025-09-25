@@ -1,15 +1,14 @@
 /* fonts */
 @font-face {
-  font-family: "Philibert", serif;
-  src: url("/fonts/PhiliItaRus.ttf") format('truetype');
+  font-family: 'Philibert';
+  src: url("./fonts/PhiliItaRus.ttf") format('truetype');
   font-weight: 100 900;
   font-style: normal;
 }
 @font-face {
-  font-family: "Fluxisch", sans-serif;
-  src: url("/fonts/FluxischElse-Regular.otf") format('opentype');
-  font-weight: 100 900;
-  font-style: bold;
+  font-family: 'Fluxisch';
+  src: url('./fonts/FluxischElse-Regular.woff') format('woff');
+  font-style: normal;
 }
 /* @font-face {
   font-family: "Fluxisch";
@@ -22,10 +21,10 @@
   font-style: regular;
 } */
 @font-face {
-  font-family: "Panchi Mono", monospace;
-  src: url("/fonts/Panchi Mono.otf") format('opentype');
+  font-family: 'Panchi Mono';
+  src: url("./fonts/Panchi Mono.otf") format('opentype');
   font-weight: 100 900;
-  font-style: regular;
+  font-style: normal;
 }
 
 
@@ -93,7 +92,7 @@ body {
 }
 
 h1{
-    font-family: 'Philibert', serif; 
+    font-family: 'Philibert'; 
     font-weight: 700;
     font-size: 2rem;
     color: #2E2D2D;
@@ -116,7 +115,7 @@ h3{
 }
 
 p{
-    font-family: 'Panchi Mono', monospace;
+    font-family: "Panchi Mono";
     font-weight: 800;
     color: black;
     font-size: 1rem;
