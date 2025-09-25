@@ -1,22 +1,17 @@
 /* fonts */
 @font-face {
   font-family: "Philibert";
-  src: url("/fonts/PhiliItaRus.woff");
-  font-weight: 100 900;
-  font-style: normal;
-}
-@font-face {
-  font-family: "PhilibertExt";
-  src: url("/fonts/PhiliItaRusExt.woff");
+  src: url("/fonts/PhiliItaRus.ttf");
   font-weight: 100 900;
   font-style: normal;
 }
 @font-face {
   font-family: "Fluxisch";
-  src: url("/fonts/FluxischElse-Bold.woff");
+  src: url("/fonts/FluxischElse-Regular");
+  font-weight: 100 900;
   font-style: bold;
 }
-@font-face {
+/* @font-face {
   font-family: "Fluxisch";
   src: url("/fonts/FluxischElse-Light.woff");
   font-style: light;
@@ -25,10 +20,11 @@
   font-family: "Fluxisch";
   src: url("/fonts/FluxischElse-Regular.woff");
   font-style: regular;
-}
+} */
 @font-face {
   font-family: "Panchi Mono";
   src: url("/fonts/Panchi Mono.otf");
+  font-weight: 100 900;
   font-style: regular;
 }
 
