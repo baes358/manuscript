@@ -1,29 +1,49 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <title>
             Sophia Bae - Typography & Interaction Project 1
         </title>
-        <link href="style.css" rel="stylesheet">
-        <!-- <link href="reset.css" rel="stylesheet"> -->
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&family=Geist:wght@100..900&display=swap" rel="stylesheet">
+        <!-- cmd + / for commenting -->
+         <!-- Reset FIRST so styles can override -->
+        <link href="reset.css" rel="stylesheet">
+        <link href="style.css" rel="stylesheet">
+
     </head>
 
     <body>
-        <header class="top">
-            <h1 class="title">
+
+        <header id="top" class="site-header" role="banner">
+            <!-- only one h1 for whole page -->
+            <h1 class="site-title">
                 Knowing Your Design History is Crucial to Aesthetic Innovation
             </h1>
-            <h2 class="author">
+            <h3 class="author">
                 By Kristen Coogan
-            </h2>
+            </h3>
+
+            <!-- jump to... -->
+            <!-- <nav class="site-nav">
+                <ul>
+                    <li><a href="#article">Article</a></li>
+                    <li><a href="#response">My Response</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+            </nav> -->
+
         </header>
         
-        <main>
-            <section class="article">
+        <main id="main">
+            <!-- article -->
+            <article id="article" class="reading">
+
+                <!-- <header class="reading-header"> -->
+                    <!-- decrement to h2 -->
+                    <!-- <h2 id="article-title">Knowing Your Design History is Crucial to Aesthetic Innovation</h2>
+                    <p class="byline">By <span class="author">Kristen Coogan</span></p>
+                </header> -->
+
                 <p>
                     In the most iconic scene of The Devil Wears Prada, Andy (Anne Hathaway) nonchalantly dismisses two nearly identical blue belts in a room full of fashion forward elites. Andy’s icy, terrifying boss Miranda (Meryl Streep) retorts with a diatribe so full of vitriol that it effectively knocks Andy down a peg. It also illuminates Andy’s own naive contributions to the very stylistic machinery she so blithely critiques: Miranda traces the origins of Andy’s “lumpy blue sweater” all the way back to the explosion of the color cerulean in Oscar de la Renta and Yves Saint Laurent’s early 2000s runway shows, before filtering down to department stores and eventually discount retailers where Andy “no doubt, fished it out of some clearance bin.” 
                 </p>
@@ -35,6 +55,15 @@
                 <p>
                     One of the best blueprints of this idea is Lorraine Wild’s “Great Wheel of Style,” which charts how style repeatedly drifts in and out of high and low culture like an undertow. In an interview for Eye Magazine in 2000, Wild suggests that style and a universally agreed upon notion of “good design” are intertwined: Good design creates intrigue and gets consumed by the mass market, which hijacks and superficially proliferates form devoid of its context. This results in cliché, embarrassment, then death, followed by fetishism, revival, and curiosity. 
                 </p>
+
+                <blockquote class="pull-quote">
+                    <p>
+                        "When design detaches from its context, we are left with clichés, embarassments...deaths."
+                    </p>
+                    <cite>
+                        Summarizing Coogan on Wild's <em>Great Wheel of Style</em>
+                    </cite>
+                </blockquote>
 
                 <p>
                     But what is good design other than a subjective and inherently flawed concept? When design and context are inextricably linked, it is good. When design detaches from its context, we are left with cliches, embarrassments … deaths. Wild’s Great Wheel of Style plays out as design oscillates from the intriguing to the unimaginative. It’s a helpful reminder for designers and design students today: if you borrow from a certain style, it’s important to know where that style came from, as well as the social and cultural contexts that gave that style its rise.
@@ -60,43 +89,19 @@
                     Tracing the work of Walala—or Christian Dior, or even Supreme’s uninventive rip-offs for that matter—to its origin sheds light on the market’s influence on style and form. We all know that style goes from high to low and high again, but identifying a style’s context breeds visual literacy and shepherds innovation. And it’s not just necessary for aesthetic innovation, it’s also necessary for good design. We can only avoid Andy’s faux pas in The Devil Wears Prada when we consider context. 
                 </p>
 
-                <!-- <p>
-                    For another example, let’s turn to the 2009 Want It campaign for Saks designed by Shepard Fairey’s Studio Number One, whose uncanny impersonation of Constructivism recycles more than just a visual language. 
-                </p> -->
-
-                <!-- <p>
-                    In the late 1910s and early 1920s, Constructivism grew out of a Soviet State sponsored movement designed to disseminate political doctrine. Collectivism, universality, practicality, industry, and purity evoked the new Soviet utopia, yielding a simplified red, black, and white Communist palette. Designs like El Lisstizky’s iconic Beat the Whites with the Red Wedge and layouts for Vladimir Mayakovsky’s For the Voice, featured intoxicating thick red and black stripes, primary shapes, and images that comprised a universal language engaging an illiterate peasant population. Type was meant to be seen and heard. The dynamically composed forms conjure a vision of the new world, “constructed” through a new visual architecture. 
-                </p> -->
-
-                <!-- <p>
-                    Unlike the Memphis Group, the Constructivist style cycle suffocated under Stalin’s 1930s Socialist Realist mandate, and thus never made it to the mainstream. It tip-toed around subsequent cliche, embarrassment, death, etc. on the Great Wheel of Style, yet over the decades, the style was still fetishized and revived. In one prominent example, Neville Brody’s 1980s design for The Face looks like a page out of Mayakosvky’s book, with heavily ruled type, directional marks and idiosyncratic typographic maneuvers that operate linguistically and graphically. 
-                </p> -->
-
-                <!-- <p>
-                    Yet whereas Brody’s design was less a wholesale rip-off of Constructivism, and more an homage to its anti-corporate and anti-establishment approach, Studio Number One’s advertising campaign for the luxury department store copied it verbatim. English language messages were written in geometric, Cyrillic-inspired letterforms to connote Russian typography. The campaign’s black and white photography mimics that of Alexander Rodchenko’s photos of spirited Communist youths gazing toward an idealized future. 
-                </p> -->
-
-                <!-- <p>
-                    At first glance, seeing a high-end retailer like Saks appropriate the Constructivist methodology to sell high fashion to their beau monde clientele was a complete assault on the original Soviet mission—it felt completely out of context. And indeed, fetishism and revival can be dangerous when it decontextualizes a style from its social or political origin. Yet upon closer examination, Want It theoretically stoked the 2008 recession-era economy. Studio Number One hijacked the Constructivist ethos to fire up a patriotic faith through unmitigated stylistic quotation. In many ways, Studio Number One outsmarted the market with a posture that lower forms of imitation failed to assume. Despite the nearly hundred years separating the Constructivist and Studio Number One campaigns, a repeat performance of art and politics converge, the context presented itself once again. Studio Number One consciously hopscotched the Great Wheel of Style, landing squarely back at the cradle of good design.
-                </p> -->
-
                 <p>
                     For designers who may feel like everything under the sun has already been done, the cycling of style contains a strange type of reassurance: it has been done, and it will be done again. Understanding this underscores the importance of design history. Knowing your history nourishes originality and edifies creative disruption—a prerequisite for our contemporary postmodern, hyper-exposed and hyper-accessed context. The burden remains on us to translate the past to be good innovators. 
                 </p>
-            </section>
+            </article>
             
-            <section class="top"> 
+            <article id="response" class="response"> 
                 <!-- section is same class as article -->
-                <h1 class="title">
-                    From Inspiration to Understanding: My Creative Practice
-                </h1>
-                <h2 class="author">
-                    By Sophia Bae
-                </h2>
-            </section>
-
-            <section>
-                <p class="response">
+                 <header class="response-header">
+                    <h2 id="response-title">From Inspiration to Understanding: My Creative Practice</h2>
+                    <h3 class="byline">By <span class="author">Sophia Bae</span></h3>
+                 </header>
+                
+                <p>
                     The article argues that one must understand the history of certain designs in order to decode visual and aesthetic culture today and in the future. The author, Kristen Coogan, states how “we all know that style goes from high to low and high again, but identifying a style’s context breeds visual literacy and shepherds innovation”. She places immense value in comprehending historical perspectives surrounding aesthetic choices, which is a necessary skill in creating good designs. 
                 </p>
 
@@ -111,12 +116,13 @@
                 <p>
                     Coogan also conceptualizes graphic designer Lorraine Wild’s “Great Wheel of Style,” which stresses that design and context are “inextricably linked.” We require this knowledge of where and how certain styles emerged into the spotlight to apply them meaningfully in our own work. At the same time, I wonder: can relying too heavily on these cycles of style risk limiting a designer’s ability to innovate and push new boundaries?
                 </p>
-            </section>
+
+            </article>
 
         </main>
 
         <footer>
-            <small>(c) 2025 - Sophia Bae</small>
+            <small>&copy; Sophia Bae 2025</small>
         </footer>
     </body>
 </html>
