@@ -1,22 +1,40 @@
 /* fonts */
 @font-face {
-  font-family: 'Philibert';
+  font-family: "Philibert";
   src: url("./fonts/PhiliItaRus.ttf") format('truetype');
   font-weight: 100 900;
   font-style: normal;
 }
 @font-face {
-  font-family: 'Fluxisch';
+  font-family: "Fluxisch";
   src: url('./fonts/FluxischElse-Regular.woff') format('woff');
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Panchi Mono';
+  font-family: "Panchi Mono";
   src: url("./fonts/Panchi Mono.otf") format('opentype');
   font-weight: 100 900;
   font-style: normal;
 }
+
+:root{
+    font-size:125%;
+    --space-3xs: 0.25rem;
+    --space-2xs: 0.5rem;
+    --space-xs: 0.75rem;
+    --space-s: 1rem;
+    --space-m: 1.5rem;
+    --space-l: 2rem;
+    --space-xl: 3rem;
+    --space-2xl: 4rem;    
+
+    --measure: 60ch;
+}
+
+
+
+
 
 body{
     background-color: #FFF1F4;
@@ -35,32 +53,106 @@ a:hover, a:focus{
 main{
     display:flex;
     flex-direction: column;
-    gap:3rem;
+    gap:var(--space-xl);
 }
+
+
+/* headings */
+h1, h2, h3{
+    color:#2E2D2D;
+    text-align:center;
+}
+
+h1, h2{
+    font-family: 'Philibert';
+    font-weight:700;
+    line-height:1;
+}
+
+h1{
+    font-size:2.4rem;
+    
+}
+h2{
+    font-size:2rem;
+    margin-block-end:var(--space-xs);
+}
+h3{
+    font-family: 'Fluxisch';
+    font-size:1.3rem;
+}
+
+
+/* body text */
+p, blockquote, cite{
+    max-inline-size: var(--measure);
+}
+p{
+    font-family: "Panchi Mono";
+    font-weight: 800;
+    color: black;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-inline:auto;
+    padding-block: var(--space-2xs);
+    padding-inline: var(--space-l);
+}
+blockquote p{
+    font-size: 1.2rem;
+    font-weight:900;
+}
+cite{
+    color:black;
+    font-family: "Panchi Mono", monospace;
+    font-size:1rem;
+    font-style:italic;
+    font-weight:1000;
+}
+
+/* footer */
+footer{
+    font-family: 'Fluxisch', sans-serif; 
+    font-weight: 500;
+    font-size:0.75rem;
+    padding-block: var(--space-s);
+    padding-inline: var(--space-s);
+    background-color: #3D3C3C;
+    color:#b8b8b8;
+    text-align: center;
+}
+
+.about-section p{
+    text-align:center;
+    padding-block-end:var(--space-m);
+}
+
+
+
 
 /* class + id */
 /* header */
 .site-header{
     background-color: #FFC1F2;
-    padding: 50px 20px 30px;
+    padding-block:var(--space-xl) var(--space-m);
+    padding-inline:var(--space-s);
     text-align: center;
 }
 .site-title{
     font-size:3rem;
     line-height:1;
-    margin-bottom: 1.5rem;
+    margin-block-end: var(--space-m);
 }
 .byline{
     font-family: 'Fluxisch';
     font-size:1.1rem;
-    margin-bottom:0.5rem;
+    margin-block-end: var(--space-2xs);
 }
 .site-nav, .nav-list{
     list-style:none;
     display:flex;
     justify-content:center;
-    gap:1.5rem;
-    padding-top:10px;
+    gap:var(--space-m);
+    padding-block-start:var(--space-xs);
 }
 .nav-item a{
     font-weight:700;
@@ -72,70 +164,61 @@ main{
 
 
 
-/* headings */
 
-h1{
-    font-family: 'Philibert';
-    font-weight:700;
-    font-size:2rem;
-    color:#2E2D2D;
-    text-align:center;
-}
-h2{
-    font-family: 'Philibert';
-    font-weight:700;
-    font-size:2rem;
-    color:#2E2D2D;
-    text-align:center;
-    margin-bottom:0.5rem;
-}
-h3{
-    font-family: 'Fluxisch';
-    font-size:1.3rem;
-    color:#2E2D2D;
-}
 
 
 /* sections */
 .section-heading{
-    margin:1.5rem 0 0.5rem;
-    padding:0 50px;
+    margin-block:var(--space-l) var(--space-xs);
+    padding-inline:var(--space-l);
     text-transform:uppercase;
     letter-spacing:0.08em;
 }
 .last-art{
-    margin-bottom: -40px;
+    margin-block-end: calc(-1 * var(--space-l));
 }
 
 
 /* reading */
 .reading{
-    padding: 40px 0;
+    padding-block: var(--space-l);
 }
 .reading-header{
     text-align:center;
-    margin-bottom:2rem;
+    margin-block-end:var(--space-l);
 }
 .reading-sum{
-    font-family:'Fluxisch';
+    font-family:"Fluxisch";
     font-size:1rem;
     letter-spacing:0.05em;
 }
 .reading-section{
-    margin-bottom:2rem;
+    margin-block-end:var(--space-l);
 }
 .pull-quote{
-    margin:1.5rem 40px;
-    padding:10px 20px;
     background-color: #fbddf4;
-    border-left:4px solid #2E2D2D;
+    border-inline-start:.2rem solid #2E2D2D;
+    max-inline-size: var(--measure);
+    margin-block:var(--space-l);
+    margin-inline:auto;
+    padding-block:var(--space-s);
+    padding-inline: var(--space-m);
+}
+.pull-quote cite{
+    margin-inline-start: var(--space-l);
+    padding-block: var(--space-s);
 }
 .context-note{
-    margin: 0 50px 2rem;
-    padding:20px;
     background-color:#ffe6f8;
-    border:2px dashed #2E2D2D;
+    border:0.1rem dashed #2E2D2D;
+    max-inline-size: var(--measure);
+    margin-block-end:var(--space-l);
+    margin-inline:auto;
+    padding-block:var(--space-m);
+    padding-inline: var(--space-m);
 }
+
+
 
 
 
@@ -146,105 +229,51 @@ h3{
 /* response */
 .myresponse{
     background-color: #3D3C3C;
-    padding-bottom: 40px;
+    padding-block-end: var(--space-l);
 }
 .response-header{
     background-color: #2E2D2D;
-    padding:50px 20px 30px;
     text-align:center;
+    padding-block:var(--space-xl) var(--space-m);
+    padding-inline:var(--space-s);
 }
 #response-title{
     color: #FFC1F2;
     font-size:3rem;
     line-height:1;
 }
+
+
+
 #myname{
     color:#FFF1F4;
 }
 .response-section{
-    padding:20px 0;
+    padding-block:var(--space-s);
 }
 .response-section .section-heading{
     color:#FFC1F2;
 }
 .myresponse p{
     color:#f3eff0;
-    padding-top:20px;
+    padding-block-start:var(--space-2xs);
 }
 #myresponse-top{
-    margin-top:15px;
+    margin-block-start:var(--space-xs);
 }
 .response-aside{
-    margin:1.5rem 50px 0;
-    padding:20px;
     background-color: #4a4949;
-    border-left:4px solid #FFC1F2;
+    border-inline-start:0.2rem solid #FFC1F2;
+    margin-block:var(--space-l) 0;
+    margin-inline:auto;
+    max-inline-size: var(--measure);
+    padding-block: var(--space-m);
+    padding-inline: var(--space-m);    
+
 }
 
 
 
-
-/* html semantics */
-
-h1{
-    font-family: 'Philibert'; 
-    font-weight: 700;
-    font-size: 2rem;
-    color: #2E2D2D;
-    text-align: center;
-}
-
-h2{
-    font-family: 'Philibert';
-    font-weight: 700;
-    font-size: 2rem;
-    color: #2E2D2D;
-    text-align: center;
-}
-
-h3{
-    font-family: 'Fluxisch';
-    font-size: 1.3rem;
-    color: #2E2D2D;
-    text-align: center;
-}
-
-p{
-    font-family: "Panchi Mono";
-    font-weight: 800;
-    color: black;
-    font-size: 1rem;
-    padding:10px 50px ;
-    line-height: 1.5;
-}
-blockquote p{
-    font-size: 1.2rem;
-    line-height: 1.5;
-    font-weight:900pt;
-    padding:10px 50px ;
-}
-cite{
-    font-family: 'Panchi Mono', monospace;
-    font-weight: 1000;
-    font-style:italic;
-    color: black;
-    font-size: 1rem;
-}
-
-footer{
-    font-family: 'Fluxisch', sans-serif; 
-    font-weight: 500;
-    font-size:.75rem;
-    padding: 20px;
-    background-color: #3D3C3C;
-    color:#b8b8b8;
-    text-align: center;
-}
-
-.about-section p{
-    text-align:center;
-    padding-bottom:30px;
-}
 .footer .footer-nav{
-    padding-bottom: 10px;
+    padding-block-end: var(--space-xs);
 }
