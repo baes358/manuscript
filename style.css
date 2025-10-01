@@ -10,16 +10,7 @@
   src: url('./fonts/FluxischElse-Regular.woff') format('woff');
   font-style: normal;
 }
-/* @font-face {
-  font-family: "Fluxisch";
-  src: url("/fonts/FluxischElse-Light.woff");
-  font-style: light;
-}
-@font-face {
-  font-family: "Fluxisch";
-  src: url("/fonts/FluxischElse-Regular.woff");
-  font-style: regular;
-} */
+
 @font-face {
   font-family: 'Panchi Mono';
   src: url("./fonts/Panchi Mono.otf") format('opentype');
@@ -27,69 +18,173 @@
   font-style: normal;
 }
 
+body{
+    background-color: #FFF1F4;
+    font-family: 'Panchi Mono', monospace;
+    color:#2E2D2D;
+}
+a{
+    color:inherit;
+    text-decoration:none;
+}
 
+a:hover, a:focus{
+    text-decoration: underline;
+}
 
+main{
+    display:flex;
+    flex-direction: column;
+    gap:3rem;
+}
 
 /* class + id */
 /* header */
 .site-header{
     background-color: #FFC1F2;
-    padding-bottom:30px;
+    padding: 50px 20px 30px;
+    text-align: center;
 }
 .site-title{
-    padding-top: 50px;
     font-size:3rem;
     line-height:1;
+    margin-bottom: 1.5rem;
 }
-.author{
-    padding:10px 0;
+.byline{
+    font-family: 'Fluxisch';
+    font-size:1.1rem;
+    margin-bottom:0.5rem;
 }
+.site-nav, .nav-list{
+    list-style:none;
+    display:flex;
+    justify-content:center;
+    gap:1.5rem;
+    padding-top:10px;
+}
+.nav-item a{
+    font-weight:700;
+    letter-spacing: 0.05em;
+}
+
+
+
+
+
+
+/* headings */
+
+h1{
+    font-family: 'Philibert';
+    font-weight:700;
+    font-size:2rem;
+    color:#2E2D2D;
+    text-align:center;
+}
+h2{
+    font-family: 'Philibert';
+    font-weight:700;
+    font-size:2rem;
+    color:#2E2D2D;
+    text-align:center;
+    margin-bottom:0.5rem;
+}
+h3{
+    font-family: 'Fluxisch';
+    font-size:1.3rem;
+    color:#2E2D2D;
+}
+
+
+/* sections */
+.section-heading{
+    margin:1.5rem 0 0.5rem;
+    padding:0 50px;
+    text-transform:uppercase;
+    letter-spacing:0.08em;
+}
+.last-art{
+    margin-bottom: -40px;
+}
+
 
 /* reading */
 .reading{
-    padding-bottom: 20px;
-    padding-top: 20px;
+    padding: 40px 0;
+}
+.reading-header{
+    text-align:center;
+    margin-bottom:2rem;
+}
+.reading-sum{
+    font-family:'Fluxisch';
+    font-size:1rem;
+    letter-spacing:0.05em;
+}
+.reading-section{
+    margin-bottom:2rem;
 }
 .pull-quote{
-    margin-bottom:20px;
-    margin-top:15px;
-    padding-bottom:20px;
-    padding-top:10px;
+    margin:1.5rem 40px;
+    padding:10px 20px;
     background-color: #fbddf4;
+    border-left:4px solid #2E2D2D;
+}
+.context-note{
+    margin: 0 50px 2rem;
+    padding:20px;
+    background-color:#ffe6f8;
+    border:2px dashed #2E2D2D;
 }
 
+
+
+
+
+
+
 /* response */
+.myresponse{
+    background-color: #3D3C3C;
+    padding-bottom: 40px;
+}
 .response-header{
     background-color: #2E2D2D;
-    padding-bottom:30px;
+    padding:50px 20px 30px;
+    text-align:center;
 }
 #response-title{
     color: #FFC1F2;
-    padding-top: 50px;
     font-size:3rem;
     line-height:1;
 }
 #myname{
     color:#FFF1F4;
-    padding:10px 0;
 }
-.myresponse{
-    background-color: #3D3C3C;
-    
+.response-section{
+    padding:20px 0;
+}
+.response-section .section-heading{
+    color:#FFC1F2;
 }
 .myresponse p{
-    color: #F3EFF0;
+    color:#f3eff0;
     padding-top:20px;
 }
 #myresponse-top{
     margin-top:15px;
 }
+.response-aside{
+    margin:1.5rem 50px 0;
+    padding:20px;
+    background-color: #4a4949;
+    border-left:4px solid #FFC1F2;
+}
+
+
+
 
 /* html semantics */
-body { 
-    background-color: #FFF1F4;
-    font-family: 'Panchi Mono', monospace; 
-}
 
 h1{
     font-family: 'Philibert'; 
@@ -130,11 +225,10 @@ blockquote p{
 }
 cite{
     font-family: 'Panchi Mono', monospace;
-    font-weight: 800;
+    font-weight: 1000;
     font-style:italic;
     color: black;
-    font-size: 0.9rem;
-    padding:10px 50px;
+    font-size: 1rem;
 }
 
 footer{
@@ -147,4 +241,10 @@ footer{
     text-align: center;
 }
 
-
+.about-section p{
+    text-align:center;
+    padding-bottom:30px;
+}
+.footer .footer-nav{
+    padding-bottom: 10px;
+}
