@@ -86,7 +86,7 @@ h3{
 
 /* body text */
 p, blockquote, cite{
-    max-inline-size: var(--measure);
+    max-inline-size: 67vw;
 }
 p{
     font-family: "Panchi Mono";
@@ -95,13 +95,16 @@ p{
     font-size: 1rem;
     line-height: 1.5;
     margin-inline:auto;
+    margin-block: var(--space-l);
     padding-block: var(--space-2xs);
     padding-inline: var(--space-l);
 }
 blockquote p{
     font-size: 1.2rem;
     font-weight:900;
+    
 }
+
 cite{
     color:black;
     font-family: "Panchi Mono", monospace;
@@ -124,7 +127,12 @@ footer{
 
 .about-section p{
     text-align:center;
-    padding-block-end:var(--space-m);
+    padding-block:var(--space-m);
+    margin-block-start: 0;
+    margin-block-end: var(--space-xs);
+}
+#about-heading{
+    margin:0;
 }
 
 
@@ -141,7 +149,8 @@ footer{
 .site-title{
     font-size:3rem;
     line-height:1;
-    margin-block-end: var(--space-m);
+    /* margin-block-end: var(--space-m); */
+    
 }
 .byline{
     font-family: 'Fluxisch';
@@ -149,15 +158,19 @@ footer{
     margin-block-end: var(--space-2xs);
 }
 .site-nav, .nav-list{
+    font-family: 'Fluxisch';
+    color: #e85686 ;
+    font-size: 1rem;
     list-style:none;
     display:flex;
     justify-content:center;
-    gap:var(--space-m);
+    gap:var(--space-l);
     padding-block-start:var(--space-xs);
+    margin-block-start:var(--space-xs);
 }
 .nav-item a{
     font-weight:700;
-    letter-spacing: 0.05em;
+    /* letter-spacing: 0.05em; */
 }
 
 
@@ -174,24 +187,28 @@ footer{
     padding-inline:var(--space-l);
     text-transform:uppercase;
     letter-spacing:0.08em;
+    color: #424242 ;
+}
+#section-intro{
+    padding-block-start:var(--space-l);
 }
 .last-art{
     margin-block-end: calc(-1 * var(--space-l));
 }
 
-
 /* reading */
-.reading{
-    padding-block: var(--space-l);
-}
+
 .reading-header{
     text-align:center;
-    margin-block-end:var(--space-l);
+    margin-block-end:var(--space-m);
 }
 .reading-sum{
-    font-family:"Fluxisch";
+    font-family:"Panchi Mono";
     font-size:1rem;
     letter-spacing:0.05em;
+    /* font-style:italic; */
+    color: #2E2D2D; ;
+    margin-block:var(--space-xs) 0;
 }
 .reading-section{
     margin-block-end:var(--space-l);
@@ -200,10 +217,14 @@ footer{
     background-color: #fbddf4;
     border-inline-start:.2rem solid #2E2D2D;
     max-inline-size: var(--measure);
-    margin-block:var(--space-l);
+    margin-block:var(--space-xl);
     margin-inline:auto;
-    padding-block:var(--space-s);
+    padding-block-start:var(--space-s);
+    padding-block-end:var(--space-l);
     padding-inline: var(--space-m);
+}
+.pull-quote p{
+    margin-block: var(--space-s);
 }
 .pull-quote cite{
     margin-inline-start: var(--space-l);
@@ -213,11 +234,22 @@ footer{
     background-color:#ffe6f8;
     border:0.1rem dashed #2E2D2D;
     max-inline-size: var(--measure);
-    margin-block-end:var(--space-l);
+    margin-block:var(--space-xl);
+
     margin-inline:auto;
-    padding-block:var(--space-m);
+    padding-block:var(--space-l);
     padding-inline: var(--space-m);
 }
+
+.context-note .section-heading{
+    margin-block-start: (var(--space-s));
+    margin-block-end: 0;
+}
+.context-note p{
+    margin-block-end: 0;
+    margin-block-start: var(--space-xs);
+}
+
 
 
 
@@ -231,12 +263,16 @@ footer{
 .myresponse{
     background-color: #3D3C3C;
     padding-block-end: var(--space-l);
+    margin-block-start: var(--space-l);
+    
 }
 .response-header{
     background-color: #2E2D2D;
     text-align:center;
-    padding-block:var(--space-xl) var(--space-m);
+    padding-block:var(--space-xl);
+
     padding-inline:var(--space-s);
+    border-block-start: 0.15rem dashed #FFC1F2;
 }
 #response-title{
     color: #FFC1F2;
@@ -249,28 +285,41 @@ footer{
 #myname{
     color:#FFF1F4;
 }
-.response-section{
+/* .response-section{
     padding-block:var(--space-s);
-}
+} */
 .response-section .section-heading{
     color:#FFC1F2;
+    margin-block-end: var(--space-m);
+    margin-block-start: var(--space-xl);
 }
 .myresponse p{
     color:#f3eff0;
-    padding-block-start:var(--space-2xs);
+    margin-block:var(--space-xs);
 }
 #myresponse-top{
-    margin-block-start:var(--space-xs);
+    /* margin-block-end: var(--space-l) ; */
+    padding-inline: var(--space-l);
+    letter-spacing: 0.08em;
+}
+#response-rest{
+    margin-block-end: var(--space-l);
 }
 .response-aside{
     background-color: #4a4949;
     border-inline-start:0.2rem solid #FFC1F2;
-    margin-block:var(--space-l) 0;
+    margin-block:var(--space-xl) 0;
     margin-inline:auto;
     max-inline-size: var(--measure);
     padding-block: var(--space-m);
     padding-inline: var(--space-m);    
 
+}
+#response-end {
+    margin-block-start:var(--space-xl);
+}
+#last-para{
+    margin-block:var(--space-m) var(--space-xl);
 }
 
 
@@ -278,3 +327,160 @@ footer{
 .footer .footer-nav{
     padding-block-end: var(--space-xs);
 }
+
+
+/* spiral effect?*/
+@property --rotate {
+  syntax: '<number>';
+  inherits: true;
+  initial-value: 0;
+}
+
+@property --delayed-rotate {
+  syntax: '<number>';
+  inherits: true;
+  initial-value: 0;
+}
+
+@keyframes scrollAnim {
+  to {
+    --rotate: 1;
+    --delayed-rotate: 1;
+  }
+}
+
+:root {
+  --circle-size: 8rem;
+  --spacing: 3vmin;
+  --font-size: 1.25rem;
+  --ease-speed: 50ms;
+}
+
+body {
+  height: 120rem;
+  margin: 0;
+  padding: 0;
+  font-family: serif;
+  font-size: var(--font-size);
+  background-color: #f8f0f3;
+  color: #222;
+  animation: scrollAnim linear;
+  animation-timeline: scroll(nearest block);
+}
+
+.spiral-section{
+    min-height: 300rem;
+    margin-block-start: calc(7 * var(--space-l));
+    margin-block-end: calc(6 * var(--space-l));
+}
+
+.spiral {
+  position: sticky;
+  left: 50%;
+  top: 50%;
+  translate: -50% -50%;
+  display: fixed;
+  width: var(--circle-size);
+  height: var(--circle-size);
+
+  list-style: none;
+  font-family:'Philibert';
+  border-radius: 50%;
+  transform: rotate(calc(var(--rotate) * 630deg));
+}
+
+.spiral-item {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  line-height: 0;
+  transform-origin: 0 0;
+  text-wrap: nowrap;
+  color: #ed68d5 ;
+  letter-spacing:.1rem;
+}
+
+/* 9 items around the circle (0°, 40°, …, 320°) */
+.spiral-item:nth-child(1) { rotate: 0deg; }
+.spiral-item:nth-child(2) { rotate: 40deg; }
+.spiral-item:nth-child(3) { rotate: 80deg; }
+.spiral-item:nth-child(4) { rotate: 120deg; }
+.spiral-item:nth-child(5) { rotate: 160deg; }
+.spiral-item:nth-child(6) { rotate: 200deg; }
+.spiral-item:nth-child(7) { rotate: 240deg; }
+.spiral-item:nth-child(8) { rotate: 280deg; }
+.spiral-item:nth-child(9) { rotate: 320deg; }
+
+.spiral-item span {
+  --rotate-velocity: calc(var(--rotate) - var(--delayed-rotate));
+  --rotate-spacing: calc(var(--spacing) * -1 * var(--rotate-velocity));
+  --x: calc(var(--circle-size) / 2 + var(--rotate-spacing));
+  --y: calc(10px * var(--rotate-velocity));
+  --r: calc(90deg * var(--rotate-velocity));
+  display: inline-block;
+  transform: translate(var(--x), var(--y)) rotate(var(--r, 0deg));
+  transform-origin: var(--x) 0;
+}
+
+/* Per letter (up to 20 letters?) */
+.spiral-item span:nth-child(2)  { 
+    --y: calc((2  * -20px) * var(--rotate-velocity)); transition: --delayed-rotate calc(var(--ease-speed, 100ms) * 1)  ease-out; 
+}
+.spiral-item span:nth-child(1)  { 
+    --y: calc((1  * -20px) * var(--rotate-velocity)); transition: --delayed-rotate calc(var(--ease-speed, 100ms) * 0)  ease-out; 
+}
+.spiral-item span:nth-child(3)  { 
+    --y: calc((3  * -20px) * var(--rotate-velocity)); transition: --delayed-rotate calc(var(--ease-speed, 100ms) * 2)  ease-out; 
+}
+.spiral-item span:nth-child(4)  { 
+    --y: calc((4  * -20px) * var(--rotate-velocity)); transition: --delayed-rotate calc(var(--ease-speed, 100ms) * 3)  ease-out; 
+}
+.spiral-item span:nth-child(5)  { 
+    --y: calc((5  * -20px) * var(--rotate-velocity)); transition: --delayed-rotate calc(var(--ease-speed, 100ms) * 4)  ease-out; 
+}
+.spiral-item span:nth-child(6)  { 
+    --y: calc((6  * -20px) * var(--rotate-velocity)); transition: --delayed-rotate calc(var(--ease-speed, 100ms) * 5)  ease-out; 
+}
+.spiral-item span:nth-child(7)  { 
+    --y: calc((7  * -20px) * var(--rotate-velocity)); transition: --delayed-rotate calc(var(--ease-speed, 100ms) * 6)  ease-out; 
+}
+.spiral-item span:nth-child(8)  { 
+    --y: calc((8  * -20px) * var(--rotate-velocity)); transition: --delayed-rotate calc(var(--ease-speed, 100ms) * 7)  ease-out; 
+}
+.spiral-item span:nth-child(9)  { 
+    --y: calc((9  * -20px) * var(--rotate-velocity)); transition: --delayed-rotate calc(var(--ease-speed, 100ms) * 8)  ease-out; 
+}
+.spiral-item span:nth-child(10) { 
+    --y: calc((10 * -20px) * var(--rotate-velocity)); transition: --delayed-rotate calc(var(--ease-speed, 100ms) * 9)  ease-out; 
+}
+.spiral-item span:nth-child(11) { 
+    --y: calc((11 * -20px) * var(--rotate-velocity)); transition: --delayed-rotate calc(var(--ease-speed, 100ms) * 10) ease-out; 
+}
+.spiral-item span:nth-child(12) { 
+    --y: calc((12 * -20px) * var(--rotate-velocity)); transition: --delayed-rotate calc(var(--ease-speed, 100ms) * 11) ease-out; 
+}
+.spiral-item span:nth-child(13) { 
+    --y: calc((13 * -20px) * var(--rotate-velocity)); transition: --delayed-rotate calc(var(--ease-speed, 100ms) * 12) ease-out; 
+}
+.spiral-item span:nth-child(14) { 
+    --y: calc((14 * -20px) * var(--rotate-velocity)); transition: --delayed-rotate calc(var(--ease-speed, 100ms) * 13) ease-out; 
+}
+.spiral-item span:nth-child(15) { 
+    --y: calc((15 * -20px) * var(--rotate-velocity)); transition: --delayed-rotate calc(var(--ease-speed, 100ms) * 14) ease-out; 
+}
+.spiral-item span:nth-child(16) { 
+    --y: calc((16 * -20px) * var(--rotate-velocity)); transition: --delayed-rotate calc(var(--ease-speed, 100ms) * 15) ease-out; 
+}
+.spiral-item span:nth-child(17) { 
+    --y: calc((17 * -20px) * var(--rotate-velocity)); transition: --delayed-rotate calc(var(--ease-speed, 100ms) * 16) ease-out; 
+}
+.spiral-item span:nth-child(18) { 
+    --y: calc((18 * -20px) * var(--rotate-velocity)); transition: --delayed-rotate calc(var(--ease-speed, 100ms) * 17) ease-out; 
+}
+.spiral-item span:nth-child(19) { 
+    --y: calc((19 * -20px) * var(--rotate-velocity)); transition: --delayed-rotate calc(var(--ease-speed, 100ms) * 18) ease-out; 
+}
+.spiral-item span:nth-child(20) { 
+    --y: calc((20 * -20px) * var(--rotate-velocity)); transition: --delayed-rotate calc(var(--ease-speed, 100ms) * 19) ease-out; 
+}
+
