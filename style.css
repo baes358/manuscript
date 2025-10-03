@@ -221,10 +221,12 @@ nav-container{
 .reading-sum{
     font-family:"Panchi Mono";
     font-size:1rem;
-    letter-spacing:0.05em;
     /* font-style:italic; */
     color: #2E2D2D; ;
     margin-block:var(--space-xs) 0;
+}
+.reading-sum a{
+    color:#ff00c8;
 }
 .reading-section{
     margin-block-end:var(--space-l);
@@ -303,7 +305,7 @@ em{
 .response-header{
     background-color: #2E2D2D;
     text-align:center;
-    padding-block:var(--space-xl);
+    padding-block:var(--space-2xl) var(--space-xl);
 
     padding-inline:var(--space-s);
     border-block-start: .25rem dotted #FFC1F2;
@@ -334,7 +336,7 @@ em{
 #myresponse-top{
     /* margin-block-end: var(--space-l) ; */
     padding-inline: var(--space-l);
-    letter-spacing: 0.08em;
+    /* letter-spacing: 0.08em; */
 }
 #response-rest{
     margin-block-end: var(--space-l);
@@ -441,7 +443,7 @@ body {
   line-height: 0;
   transform-origin: 0 0;
   text-wrap: nowrap;
-  color: #5f4a5a ;
+  color: #f85cd4 ;
   letter-spacing:.1rem;
 }
 
