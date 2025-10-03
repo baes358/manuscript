@@ -20,7 +20,7 @@ I built my site to present significant parts of the article with my personal ref
 - Keep one `<h1>` for the page and use `<h2>`/`<h3>` for structured hierarchy.
 - Writing a README is a good GitHub practice that I did not realize the importance of prior: it documents what the project is, how it was built, and why it matters.
 - For future improvements, this structure could definitely be extended into more interactive experiments (scroll effects, responsive typography, etc.).
-- When I last worked on a project with CSS, I used to love playing with different types of subtle motion graphics. It was difficult learning the syntax again, but I'm glad it turned out better than I had hoped. I need to keep pushing myself to try different things, and I hope I can in future projects!
+- When I last worked on a project with CSS, I used to love playing with different types of subtle motion graphics. It was difficult learning the syntax again, but I'm glad it turned out better than I had hoped. I need to keep pushing myself to try different things, and I hope I can in future projects too!
 
 -
 
