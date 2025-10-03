@@ -240,6 +240,7 @@ nav-container{
     padding-block-start:var(--space-s);
     padding-block-end:var(--space-l);
     padding-inline: var(--space-m);
+    box-sizing:content-box;
 }
 /* .pq-content{
  
@@ -251,17 +252,19 @@ nav-container{
 .pull-quote cite{
     padding-block: var(--space-s);
     margin-inline-start: var(--space-l);
+    font-size: 1rem;
     padding-inline:var(--space-l);
+    max-width: var(--measure);
 }
 .context-note{
     background-color:#ffe6f8;
     border:0.1rem dashed #2E2D2D;
     max-inline-size: var(--measure);
     margin-block:var(--space-xl);
-
+    box-sizing:content-box;
     margin-inline:auto;
     padding-block:var(--space-l);
-    padding-inline: (--space-m);
+    padding-inline: var(--space-m);
 }
 
 .context-note .section-heading{
@@ -271,6 +274,7 @@ nav-container{
 .context-note p{
     margin-block-end: 0;
     margin-block-start: var(--space-xs);
+    padding-inline:var(--space-xl);
 }
 
 
