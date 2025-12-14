@@ -59,6 +59,17 @@ main{
     flex-direction: column;
 
 }
+article .reading-section, .response-section{
+    @media (790px <= width <= 1100px){
+        width:40rem;
+        margin-inline:auto;
+    }
+
+    @media (width > 1100px){
+        width:50rem;
+        margin-inline:auto;
+    }
+}
 
 
 
@@ -91,7 +102,8 @@ h1{
     @media (width > 1100px){
         line-height:3.75rem;
         font-size:3.5rem;
-        margin-inline:7rem;
+        margin-inline:auto;
+        width:60rem;
     }
 
 }
@@ -293,6 +305,16 @@ blockquote{
     margin-inline:1rem;
 
     box-sizing:content-box;
+
+    @media (790px <= width <= 1100px){
+        width:35rem;
+        margin-inline:auto;
+    }
+
+    @media (width > 1100px){
+        width:45rem;
+        margin-inline:auto;
+    }
 }
 
 blockquote p{
@@ -323,6 +345,16 @@ blockquote .cite{
     margin-inline:1rem;
     margin-block-start:5rem;
 
+    @media (790px <= width <= 1100px){
+        width:35rem;
+        margin-inline:auto;
+    }
+
+    @media (width > 1100px){
+        width:45rem;
+        margin-inline:auto;
+    }
+
 }
 
 
@@ -334,6 +366,16 @@ aside{
     margin-inline:1rem;
     margin-block:5rem;
     text-align:center;
+
+    @media (790px <= width <= 1100px){
+        width:35rem;
+        margin-inline:auto;
+    }
+
+    @media (width > 1100px){
+        width:45rem;
+        margin-inline:auto;
+    }
 }
 aside h3{
         text-align:center;
@@ -392,7 +434,7 @@ aside h3{
 
 
 /* marquee animation */
-.wheel-list{
+.marq-list{
     margin-block:5rem;
     padding-block:1.5rem 1rem;
     color: var(--pink);
@@ -401,21 +443,21 @@ aside h3{
     margin-inline:0rem;
     overflow:hidden;
 }
-.wheel-list-inner {
+.marq-list-inner {
     font-family:"Philibert";
     letter-spacing:var(--large-space);
     display: flex;
     width: max-content;
-    animation: marquee 12s linear infinite;
+    animation: marquee 25s linear infinite;
 }
-.wheel-list:hover {
+.marq-list:hover {
       opacity:90%;
 }
-.wheel-list-inner:hover {
+.marq-list-inner:hover {
       animation-play-state: paused;
 }
 
-.wheel-list-inner li{
+.marq-list-inner li{
     margin-inline:1rem;
 }
 
@@ -466,7 +508,7 @@ em{
 .about-section{
     font-family: 'Philibert';
     text-align: center;
-    padding:1.5rem;
+    padding-block:3rem;
     color:var(--dusty-rose);
 }
 .about-section h4{
