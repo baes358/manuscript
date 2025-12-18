@@ -289,7 +289,7 @@ header .sum{
 .response-header{
     background: linear-gradient(to top, var(--light-gray), var(--off-black));
     text-align:center;
-    border-block-end:.2rem dashed var(--light-gray);
+    border-block-end:.23rem dotted var(--light-gray);
     color: var(--off-white);
     padding-block:4rem;
     margin-block-start:5rem;
