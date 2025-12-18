@@ -190,6 +190,17 @@ h3{
     color: var(--off-black);
     font-size:1.75rem;
     margin-block-end:1.25rem;
+
+    @media (790px <= width <= 1100px){
+        
+        font-size:2rem;
+        
+    }
+    @media (width > 1100px){
+        
+        font-size:2.5rem;
+        
+    }
 }
 .myresponse h3{
     text-align:left;
@@ -198,6 +209,17 @@ h3{
     color: var(--pink);
     font-size:1.75rem;
     margin-block:5rem 1.25rem;
+
+    @media (790px <= width <= 1100px){
+        
+        font-size:2rem;
+        
+    }
+    @media (width > 1100px){
+        
+        font-size:2.5rem;
+        
+    }
 }
 
 p{
@@ -206,11 +228,43 @@ p{
     line-height: 1.75rem;
     text-wrap:pretty;
     letter-spacing: var(--large-space);
+
+    @media (790px <= width <= 1100px){
+        
+        font-size:1.3rem;
+        line-height: 1.9rem;
+        
+    }
+    @media (width > 1100px){
+        
+        font-size:1.45rem;
+        line-height: 2.1rem;
+        
+    }
     
 }
 .myresponse p{
     color:var(--off-white);
+    font-family: 'NatPark';
+    font-size: 1.1rem;
+    line-height: 1.75rem;
+    text-wrap:pretty;
+    letter-spacing: var(--large-space);
+
+    @media (790px <= width <= 1100px){
+        
+        font-size:1.3rem;
+        line-height: 1.9rem;
+        
+    }
+    @media (width > 1100px){
+        
+        font-size:1.45rem;
+        line-height: 2.1rem;
+        
+    }
 }
+
 
 
 
@@ -260,17 +314,29 @@ header .sum{
 /* nav */
 .nav-list{
     color: var(--dark-pink);
-    font-size: 1rem;
     list-style:none;
     display:flex;
     margin-block:2rem 7rem;
     justify-content: space-around;
+
     
 }
 .nav-list li{
     font-size:1.2rem;
     letter-spacing: var(--large-space);
     font-weight:500;
+
+    @media (790px <= width <= 1100px){
+        
+        font-size:1.4rem;
+        
+    }
+    @media (width > 1100px){
+        
+        font-size:1.55rem;
+        
+    }
+    
 }
 
 
@@ -396,8 +462,9 @@ aside h3{
 .response-section p{
     margin-block-end:3.5rem;
     font-weight:200;
+    /* font-weight:200;
     font-size: 1.1rem;
-    line-height: 1.8rem;
+    line-height: 1.8rem; */
 
 }
 
@@ -422,10 +489,10 @@ aside h3{
 
 
 
-/* marquee animation */
+/* marquee list formatting */
 .marq-list{
     margin-block:5rem;
-    padding-block:1.5rem 1rem;
+    padding-block:1rem .75rem;
     color: var(--pink);
     background: var(--mid-gray);
     border-block:.2rem solid var(--pink);
@@ -439,6 +506,7 @@ aside h3{
     width: max-content;
     animation: marquee 25s linear infinite;
 }
+/* hover effects */
 .marq-list:hover {
       opacity:90%;
 }
@@ -450,7 +518,7 @@ aside h3{
     margin-inline:1rem;
 }
 
-
+/* state the animation keyframes */
 @keyframes marquee {
   0% {
     transform: translateX(0);
@@ -474,6 +542,14 @@ em{
     font-style:italic;
 }
 
+span{
+    background:var(--light-pink);
+}
+
+
+.myresponse p span{
+    background:var(--mid-gray);
+}
 
 /* response */
 .myresponse{
@@ -564,6 +640,17 @@ footer ul li{
     font-size:1.2rem;
     letter-spacing: var(--large-space);
     font-weight:500;
+
+    @media (790px <= width <= 1100px){
+        
+        font-size:1.4rem;
+        
+    }
+    @media (width > 1100px){
+        
+        font-size:1.55rem;
+        
+    }
 }
 footer nav ul a:hover{
     color: var(--dark-pink);
@@ -582,7 +669,3 @@ footer p{
 
 
 
-/* 
-.arrow{
-    padding-block-end:2rem;
-} */

@@ -19,6 +19,8 @@ The major elements used:
 - `<aside>` — Supplementary notes providing context
 - `<footer>` — Navigation links and copyright
 
+- `<em>`, `<strong>`, `<span>` — Emphasis and highlight for body paragraph texts
+
 ## CSS Formats
 
 ### reset.css
