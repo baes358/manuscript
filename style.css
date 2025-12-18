@@ -450,7 +450,7 @@ aside h3{
 
 /* sections */
 .reading-section{
-    padding-inline:1rem;
+    padding-inline:1.5rem 1rem;
 }
 
 .reading-section p{
@@ -458,7 +458,7 @@ aside h3{
     
 }
 .response-section{
-    padding-inline:1rem;
+    padding-inline:1.5rem 1rem;
 }
 .response-section p{
     margin-block-end:3.5rem;
