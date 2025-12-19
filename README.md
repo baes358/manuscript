@@ -75,11 +75,13 @@ I used the marquee effect visualizes Wild's "Great Wheel of Style":
 
 The typefaces I chose for this revision are slightly different. I kept Philibert and added National Park as they both have subtle, minor inconsistencies that reflect how I feel about history. The  pink-and-off-white palette for the article transitions to a darker gray scheme for my response, and it functions to visually distinguish the original text from my personal reflection.
 
-The marquee animation isn't just a decorative element, as it displays the cyclical nature of style that Coogan describes, looping endlessly from "Good Design" to "Revival", and repeated infinitely.
+The marquee animation isn't just a decorative element, as it displays the cyclical nature of style that Coogan describes, looping from "Good Design" to "Revival", and repeated infinitely.
+
+I also incorporated heart character symbols for decorative purposes, as the color scheme inspired me to include it.
 
 ## Lessons Learned
 
-- Semantic HTML improves a website's accessibility, SEO, and long-term maintainability (and it is easier to read organized structures)
+- Semantic HTML improves a website's accessibility, SEO, and long-term maintainability (and it is easier to read organized structures in code)
 - Keep one `<h1>` per page and use `<h2>`/`<h3>` for structured hierarchy when needed
 - CSS custom variables/properties make theming and color adjustments much easier
 - The reset stylesheet should load *before* custom styles
